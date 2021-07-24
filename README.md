@@ -21,7 +21,7 @@ Please consider sending me some coffe at `0x10A5666d9A137E50f19E85643bD929BdCad6
 
 ![create-new](create-new.png)
 
-### 3. Copy the contents of [CryptoBladesCalculatorScript.js](CryptoBladesCalculatorScript.js) and paste them on the editor you just opened
+### 3. Copy the content of [CryptoBladesCalculatorScript.js](CryptoBladesCalculatorScript.js) and paste them on the editor you just opened
 
 ![save-script](save-script.png)
 

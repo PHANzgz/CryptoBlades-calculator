@@ -2,7 +2,7 @@
 // @name         CryptoBlades Fight Probability Calculator
 // @namespace    PHANzgz
 // @version      0.5
-// @description  Simulates fights on cryptoblades and calculates probability of winning for each enemy
+// @description  (BETA) Simulates fights on cryptoblades and calculates probability of winning for each enemy
 // @author       PHANzgz
 // @match        https://app.cryptoblades.io
 // @include      https://app.cryptoblades.io/#/combat
@@ -91,9 +91,10 @@ $(document).ready(function() {
         data.heroTrait = heroTraits[raw_heroTrait];
 
         // Weapon trait
-
-        var raw_weaponTrait = document.querySelector("div.col.weapon-selection > div:nth-child(2) > div > div > div.glow-container.glow-1 > div.trait > span").className;
+        var raw_weaponTrait = document.querySelector("div.col.weapon-selection > div:nth-child(2) > div > div > div.glow-container > div.trait > span").className;
         data.weaponTrait = weaponTraits[raw_weaponTrait];
+
+        console.log("here");
 
         // Weapon stats
 

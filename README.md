@@ -15,11 +15,15 @@ Please consider sending me some coffe at `0x10A5666d9A137E50f19E85643bD929BdCad6
 
 ### 1. Install Tampermonkey extension on Chrome or Brave
 
-![tampermonkey](tampermonkey.png)
+<p align="center">
+    <img src="tampermonkey.png" alt="tampermonkey">
+</p>
 
 ### 2. Click the extension icon and select create new script
 
-![create-new](create-new.png)
+<p align="center">
+    <img src="create-new.png" alt="create-new">
+</p>
 
 If you can't find it, you may have to click the extension list first to display the menu and then select the Tampermonkey icon.
 

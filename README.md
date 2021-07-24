@@ -38,3 +38,8 @@ Remember to save the script (File -> Save)
 ![result](result.png)
 
 Finally, go to combat, select a weapon and click the button. You should now see the probability of winning for each enemy, as shown in the first image.
+
+
+# Credits
+
+- Credits to [wax-dapps](https://wax-dapps.site/crypto-blades/combat) for creating the logic for the calculator first.

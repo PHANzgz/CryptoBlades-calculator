@@ -13,13 +13,15 @@ Please consider sending me some coffe at `0x10A5666d9A137E50f19E85643bD929BdCad6
 
 # How to install
 
-### 1. Install Tampermonkey on Chrome or Brave
+### 1. Install Tampermonkey extension on Chrome or Brave
 
 ![tampermonkey](tampermonkey.png)
 
 ### 2. Click the extension icon and select create new script
 
 ![create-new](create-new.png)
+
+If you can't find it, you may have to click the extension list first to display the menu and then select the Tampermonkey icon.
 
 ### 3. Copy the content of [CryptoBladesCalculatorScript.js](CryptoBladesCalculatorScript.js) and paste them on the editor you just opened
 

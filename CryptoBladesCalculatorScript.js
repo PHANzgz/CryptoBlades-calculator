@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CryptoBlades Fight Probability Calculator
 // @namespace    PHANzgz
-// @version      0.5
+// @version      0.6
 // @description  (BETA) Simulates fights on cryptoblades and calculates probability of winning for each enemy
 // @author       PHANzgz
 // @match        https://app.cryptoblades.io
@@ -91,7 +91,7 @@ $(document).ready(function() {
         data.heroTrait = heroTraits[raw_heroTrait];
 
         // Weapon trait
-        var raw_weaponTrait = document.querySelector("div.col.weapon-selection > div:nth-child(2) > div > div > div.glow-container > div.trait > span").className;
+        var raw_weaponTrait = document.querySelector("div.col.weapon-selection > div > div:nth-child(3) > div > div.glow-container > div.trait > span").className;
         data.weaponTrait = weaponTraits[raw_weaponTrait];
 
         console.log("here");
@@ -100,7 +100,7 @@ $(document).ready(function() {
 
         for (let i = 1; i <= 3; i++){
 
-            let raw_stat = document.querySelector(`div.col.weapon-selection > div:nth-child(2) > div > div > div.stats > div:nth-child(${i}) > span:nth-child(2)`);
+            let raw_stat = document.querySelector(`div.col.weapon-selection > div > div:nth-child(3) > div > div.stats > div:nth-child(${i}) > span:nth-child(2)`);
 
             if (raw_stat){
                 data[`stat${i}Trait`] = weaponStatTraits[raw_stat.className];

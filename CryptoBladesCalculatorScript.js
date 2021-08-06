@@ -1,36 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@utopiaholic 
-utopiaholic
-/
-CryptoBlades-calculator
-forked from PHANzgz/CryptoBlades-calculator
-0
-0
-3
-Code
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-CryptoBlades-calculator/CryptoBladesCalculatorScript.js /
-@utopiaholic
-utopiaholic Update CryptoBladesCalculatorScript.js
-…
-Latest commit 826cf3c 26 seconds ago
- History
- 2 contributors
-@PHANzgz@utopiaholic
-279 lines (224 sloc)  10.8 KB
-  
 // ==UserScript==
 // @name         CryptoBlades Fight Probability Calculator
 // @namespace    PHANzgz
@@ -308,16 +275,3 @@ $(document).ready(function() {
     }
 
 });
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete

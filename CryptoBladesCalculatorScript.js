@@ -1,3 +1,36 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@utopiaholic 
+utopiaholic
+/
+CryptoBlades-calculator
+forked from PHANzgz/CryptoBlades-calculator
+0
+0
+3
+Code
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+CryptoBlades-calculator/CryptoBladesCalculatorScript.js /
+@utopiaholic
+utopiaholic Update CryptoBladesCalculatorScript.js
+…
+Latest commit 826cf3c 26 seconds ago
+ History
+ 2 contributors
+@PHANzgz@utopiaholic
+279 lines (224 sloc)  10.8 KB
+  
 // ==UserScript==
 // @name         CryptoBlades Fight Probability Calculator
 // @namespace    PHANzgz
@@ -117,10 +150,10 @@ $(document).ready(function() {
         // Enemies stats
         for (let i = 1; i <= 4; i++){
 
-            let raw_enemyTrait = document.querySelector(`div.enemy-list > div:nth-child(${i}) > div > div.enemy-character > div.encounter-element > span`).className;
+            let raw_enemyTrait = document.querySelector(`div.combat-enemy-container > div.row.mb-3.enemy-container > div:nth-child(${i+1}) > div > div.enemy-character > div.encounter-element > span`).className;
             data[`enemy${i}Trait`] = enemyTraits[raw_enemyTrait];
 
-            let raw_enemyPower = document.querySelector(`div.enemy-list > div:nth-child(${i}) > div > div.enemy-character > div.encounter-power`).innerText;
+            let raw_enemyPower = document.querySelector(`div.combat-enemy-container > div.row.mb-3.enemy-container > div:nth-child(${i+1}) > div > div.enemy-character > div.encounter-power`).innerText;
             data[`enemy${i}`] = parseInt(raw_enemyPower.replace(/[^0-9.]/g, ''));
 
         }
@@ -212,12 +245,10 @@ $(document).ready(function() {
 
         }
 
-
-
-        document.querySelector("div.enemy-list > div:nth-child(1) > div > div.victory-chance").innerText = ' ' + ((won1/loop)*100).toFixed(2) + '%'
-        document.querySelector("div.enemy-list > div:nth-child(2) > div > div.victory-chance").innerText = ' ' + ((won2/loop)*100).toFixed(2) + '%'
-        document.querySelector("div.enemy-list > div:nth-child(3) > div > div.victory-chance").innerText = ' ' + ((won3/loop)*100).toFixed(2) + '%'
-        document.querySelector("div.enemy-list > div:nth-child(4) > div > div.victory-chance").innerText = ' ' + ((won4/loop)*100).toFixed(2) + '%'
+        document.querySelector(`div.combat-enemy-container > div.enemy-container > div:nth-child(2) > div > div.victory-chance`).innerText = ' ' + ((won1/loop)*100).toFixed(2) + '%'
+        document.querySelector(`div.combat-enemy-container > div.enemy-container > div:nth-child(3) > div > div.victory-chance`).innerText = ' ' + ((won2/loop)*100).toFixed(2) + '%'
+        document.querySelector(`div.combat-enemy-container > div.enemy-container > div:nth-child(4) > div > div.victory-chance`).innerText = ' ' + ((won3/loop)*100).toFixed(2) + '%'
+        document.querySelector(`div.combat-enemy-container > div.enemy-container > div:nth-child(5) > div > div.victory-chance`).innerText = ' ' + ((won4/loop)*100).toFixed(2) + '%'
     }
 
     function getWeaponPower(weaponTrait, stat1, trait1, stat2, trait2, stat3, trait3) {
@@ -277,3 +308,16 @@ $(document).ready(function() {
     }
 
 });
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
